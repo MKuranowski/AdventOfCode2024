@@ -4,7 +4,7 @@
 left = Vector{Int}()
 right = Vector{Int}()
 
-for line in eachline(ARGS[1])
+for line in eachline()
     x = split(line, " ", keepempty=false)
     push!(left, parse(Int, x[1]))
     push!(right, parse(Int, x[2]))

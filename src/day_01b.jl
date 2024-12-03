@@ -4,7 +4,7 @@
 left = Dict{Int, Int}()
 right = Dict{Int, Int}()
 
-for line in eachline(ARGS[1])
+for line in eachline()
     x = split(line, " ", keepempty=false)
 
     a = parse(Int, x[1])
