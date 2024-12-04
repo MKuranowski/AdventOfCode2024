@@ -1,3 +1,6 @@
+# © Copyright 2024 Mikołaj Kuranowski
+# SPDX-License-Identifier: MIT
+
 function read_matrix()::Matrix{Char}
     input = readlines()
     rows = length(input)

@@ -1,3 +1,6 @@
+# © Copyright 2024 Mikołaj Kuranowski
+# SPDX-License-Identifier: MIT
+
 include("day_04.jl")
 
 function main()
