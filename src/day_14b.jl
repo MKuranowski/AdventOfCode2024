@@ -7,14 +7,14 @@ function find_cycle(step, side_length)
     side_length ÷ gcd(step, side_length)
 end
 
-function find_robot_cycle(position)
-    lcm(find_cycle(position[1], BOUNDS[1]), find_cycle(position[2], BOUNDS[2]))
+function find_robot_cycle(velocity)
+    lcm(find_cycle(velocity[1], BOUNDS[1]), find_cycle(velocity[2], BOUNDS[2]))
 end
 
 function find_board_cycle(robots)
     cycle = 1
     for robot in robots
-        cycle = lcm(cycle, find_robot_cycle(robot.position))
+        cycle = lcm(cycle, find_robot_cycle(robot.velocity))
     end
     cycle
 end
@@ -39,6 +39,7 @@ end
 function main()
     robots = read_input()
     upper_bound = find_board_cycle(robots)
+    display(upper_bound)
 
     for i in 1:upper_bound
         robots = robots .|> (r -> move(r, 1)) |> collect
