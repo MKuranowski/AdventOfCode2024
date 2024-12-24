@@ -10,3 +10,4 @@ Day-specific notes:
     I just decided to grab a coffee while waiting for it to finish, instead of trying
     to implement something that works properly.
 - Day 10 was funny, I made a mistake in part A that turned out to be the solution to part B.
+- Day 24 part B requires manual labor to solve. See the docstring for details.
